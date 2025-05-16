@@ -1,0 +1,15 @@
+table {
+    border: 1px;
+    border-color: black;
+    width: 10px;
+    height: 30px;
+    border-style:dashed
+}
+
+td {
+    border: 1px;
+    border-color: black;
+    width: 15px;
+    height: 7px;
+    border-style:solid
+}
