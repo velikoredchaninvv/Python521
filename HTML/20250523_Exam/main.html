@@ -1,0 +1,102 @@
+<!--
+[+] Написать страницу заявки на космических кораблей. // Нужна шапка из Футурамы
+
+[+] Слева - форма заявки.
+[+] Справа - три блока рекламы, которые не должны быть сцеплены со строками заявки.
+
+[+] ФИО (одно поле текстового ввода с серенькой подсказкой на нем)
+[+] Чекбокс "срочный ремонт", строка должна нажимать галочку!
+[+] Телефон
+[+] Электронная почта
+[+] Выпадающий список "планшет, ноутбук, телефон"
+[+] Большое (больше одной строки) поле ввода для описания неисправности // textarea
+[+] Радиогруппа "заберите у меня и привезите", "ремонт на дому", "подъеду к вам в офис" (кружочковые кнопки с работающими строками), оформленная в виде списка
+[+] Все вопросы анкеты должны быть пронумерованы автоматически (без цифр в начале строки в HTML)
+[+] На страницу добавить фотографию устройства и кнопку "отправить"
+[+] Добавить ссылку на фирму по ремонту
+[+] Обязательно применить стиль css в отдельном файле.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <img src="image/cover.jpg" alt="Ремонт" class="img">  
+    <div class="container"> 
+        <div class="left">
+            <ol>
+                <li>
+            <input type="text" placeholder="ФИО" class="FIO">
+                </li>
+            <p>
+                <li>
+                <label for="srochno">Экипаж не кушать </label>
+                <input type="checkbox" name="srochno" id="srochno" />
+            </p>
+                </li>
+                <li><input type="text" placeholder="Космофон" class="FIO"></li>
+                <li><input type="text" placeholder="Почта России" class="FIO"></li>
+                
+                <li>
+                <p>
+
+                <form>  
+                    <label for="fruits">Заберёте через: </label>  
+                    <select id="fruits" name="fruits">  
+                        <option value="apple">Звёздные врата</option>  
+                        <option value="banana">Найму Бендера</option>  
+                        <option value="orange">Перенос в будущее</option>  
+                    </select>  
+                </form>  
+                </p>
+                </li>
+                <li>
+                <p>
+                    <textarea rows='3' cols='26' class="FIO">Неисправность</textarea>
+                </p>
+                </li>
+                <li>
+                <fieldset>
+                    <legend class="FIO">Ретро доставка:</legend>
+                        <table>
+                            <tr>
+                                <td><label for="red">Заберите через гравицапу</label></td>
+                                <td><input type="radio" name="color" id="red"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="blue">Ремонт на орбите</label></td>
+                                <td><input type="radio" name="color" id="blue"></td>
+                            </tr>
+                                <td><label for="green">Подъеду к вам к солнцу</label></td>
+                                <td><input type="radio" name="color", id="green"></td>
+                            </tr>
+                        </table>
+                </fieldset>
+                </li>
+                <p>
+                <li>
+                    <img src="image/tolko pokrasit.jpg" alt="Ремонт" class="img">
+                </li>
+                </p>
+
+
+            <p>
+                <li>
+                    <a href="https://www.roscosmos.ru/"> Починим всё</a>
+                </li>
+            </p>
+        </ol>
+        </div>
+        <div class="right">
+            <p><img src="image/rk01.jpg" alt="Ремонт" class="img"></p>
+            <p><img src="image/rk02.jpg" alt="Ремонт" class="img"></p>
+            <p><img src="image/rk03.jpg" alt="Ремонт" class="img"></p>
+        </div>
+    </div>
+</body>
+</html>
