@@ -1,0 +1,29 @@
+<!-- 1.
+ Добавить на страницу поля ввода имени (можно ФИО) и возраста.
+2. Добавить в функцию JS, чтобы из полей ввода были взяты данные и на странице появился списо посетителей с именами и возрастами.
+3. Добавить файл CSS, который стилизует список: вокруг списка рамка, а пункты светлый текст на темном фоне
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панда-парк</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="panda.js"></script>
+</head>
+<body>
+    <input type="button" onclick="add_kid()">
+    <input name="fio" id="fio" type="" placeholder="ФИО">
+    <input name="age" id="age" type="number" placeholder="Возраст">
+    <input type="button" onclick="pognali()" value="Ввод"> 
+    
+    <fieldset>
+        <legend>Список</legend>
+            <ol id="kids">
+                
+            </ol>
+    </fieldset>
+</body>
+</html>
