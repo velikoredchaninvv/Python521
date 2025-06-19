@@ -21,9 +21,14 @@ function eat() {
     while (count > 0)
         {
         count --;
-            if (count%2!=0){vase_left++}
-            else {vase_right++}
+            if (count%2!=0){
+                vase_left++;
+                console.log(count--)
+            }
+            else {
+                vase_right++
+            }
         }
-            console.log('В левой вазе стало конфет: ',vase_left);
+            console.log('В левой вазе стало конфет: ', vase_left)
             console.log('В правой вазе стало конфет: ', vase_right)
 }
