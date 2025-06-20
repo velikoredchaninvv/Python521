@@ -8,30 +8,18 @@
 //         уменьшает сумму на 500, а покупатель повышает на 600. За какую сумму
 //         будет куплен букет?</li> */
 
-// while (cost >= 4500 && wallet <= 6000){
-//     auction_down = 10000 - 500
-//     auction_up = 4000 + 600
-//     console.log(auction_down, auction_up)
-// } else {
-//     console.log('Букет будет продан за: ')
-// }
+target_cost = 4500
+target_wallet = 6000
 
-// 10000 тысяч - 500 получаю первый этап торгов для wallet
-// Проверяю, меньше или равно cost, если меньше, то двигаюсь дальше вниз
+current_cost = 10000
+current_wallet = 4000
 
-// 4000 тысяч + 600 получаю первый этап торгов для cost
-// Проверяю, больше или равно wallet, если больше, то двигаюсь дальне вверх
+step_cost = 500
+step_wallet = 600
 
-cost = 4500
-wallet = 6000
+while (target_cost >= current_cost || target_wallet <= current_wallet){
+    current_cost = current_cost - step_cost
+    current_wallet = current_wallet + step_wallet
 
-auction_down = pass
-auction_up = pass
-
-while (cost >= 4500 || wallet <= 6000 ){
-    auction_down = 10000 - 500
-    auction_up = 4000 + 600
-
-    cost = auction_down
-    wallet = auction_up
+    console.log(current_cost, current_wallet)
 }
