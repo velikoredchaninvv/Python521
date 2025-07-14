@@ -10,7 +10,6 @@ class Man {
     }
 }
 
-
 const nMan = new Man(39,75,'Slava')
 
 console.log(`Age of the man ${nMan.age}`)
