@@ -6,7 +6,7 @@ class Man {
         this.lifetime = 0
     }
     time_of_life(time){
-        this.lifetime =+ time
+        this.lifetime =+ time * 2
     }
 }
 
