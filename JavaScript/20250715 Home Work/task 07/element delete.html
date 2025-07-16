@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Удаляю элемент</title>
+</head>
+<body>
+    <button onclick="delelem()">Удаление</button>
+    <div id="divdel">Этот элемент удаляю</div>
+
+    <script>
+
+        function delelem() {
+        const delparam = document.getElementById("divdel")
+
+        if(delparam) {
+            delparam.remove()
+            alert("Элемент удалён")
+        } else {
+            alert("Элемент не существует")
+        }
+    }
+
+    </script>
+</body>
+</html>
