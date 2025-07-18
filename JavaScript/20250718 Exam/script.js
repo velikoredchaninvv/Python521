@@ -21,7 +21,7 @@ createButton.appendChild(buttonElement)
 
 // Создаю таблицу
 const tablecreate = document.createElement("table")
-const tableRow = document.createElement("tr") // создаю строку
+const tableRow1 = document.createElement("tr") // создаю строку
 
 const column1 = document.createElement("td")
 const column2 = document.createElement("td")
@@ -31,9 +31,9 @@ column1.textContent = ""
 column2.textContent = ""
 column3.textContent = ""
 
-tableRow.appendChild(column1)
-tableRow.appendChild(column2)
-tableRow.appendChild(column3)
+tableRow1.appendChild(column1)
+tableRow1.appendChild(column2)
+tableRow1.appendChild(column3)
 
 // Варианты вопросов и ответов
 let otvet = ["Лондон", "Москва", "Киров"]
@@ -71,7 +71,7 @@ function pushQuestion(){
 
 
 // Публикую табницу
-tablecreate.appendChild(tableRow)
+tablecreate.appendChild(tableRow1)
 
 const tableNew = document.getElementById("div_for_table")
 tableNew.appendChild(tablecreate)
