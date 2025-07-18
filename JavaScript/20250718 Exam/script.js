@@ -23,6 +23,11 @@ createButton.appendChild(buttonElement)
 const tablecreate = document.createElement("table")
 const tableRow = document.createElement("tr") // создаю строку
 
+// function pushQuestion(){
+//     let i = 0
+
+// }
+
 const column1 = document.createElement("td")
 const column2 = document.createElement("td")
 const column3 = document.createElement("td")
@@ -35,6 +40,8 @@ tableRow.appendChild(column1)
 tableRow.appendChild(column2)
 tableRow.appendChild(column3)
 
+
+// Данные для опроса
 // Варианты вопросов и ответов
 let otvet = ["Лондон", "Москва", "Киров"]
 let vopros = ["Столица Лондона?", "Столица России?", "Столица Кировской области?"]
@@ -47,16 +54,21 @@ function pushQuestion(){
     column1.textContent = vopros[i]
     column2.textContent = otvet[i]
 
-    for(i=0;i<=2;i++){
-        // questionElement.placeholder = "Столица России?"
+    if (questionElement.value === otvet[i]) {
+        column3.textContent = "Правильно"
+    } else {
+        column3.textContent = "Не правильно"
+    }
+
+    i++
+
+    if(i<vopros.length){
+        questionElement.placeholder = vopros[i]
+        questionElement.value = ""
         column1.textContent = questionElement.placeholder
         column2.textContent = questionElement.value
-            if (questionElement.value === "Лондон") {
-                column3.textContent = "Правильно"
-            } else {
-                column3.textContent = "Не правильно"
-            }
-    } questionElement.placeholder = voprops[i]
+    }
+    questionElement.placeholder = voprops[i]
 }
 
 
