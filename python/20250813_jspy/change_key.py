@@ -14,3 +14,5 @@ print(vocabulary)
 
 # for i in vocabulary:
 #     print([i],vocabulary[i],len(vocabulary))
+
+print
