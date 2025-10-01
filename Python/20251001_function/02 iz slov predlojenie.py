@@ -3,7 +3,7 @@
 # Между словами вставляются пробелы
 
 def make_text(*words):
-    result = words[0].upper() + words[1:] + ' '
+    result = words[0][0].upper() + words[0][1:] + ' '
     result += ' '.join(words[1:]) + '.'
     return result
 
