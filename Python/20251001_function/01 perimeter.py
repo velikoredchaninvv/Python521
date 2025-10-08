@@ -53,15 +53,29 @@
 # print(find_phone(name='Хосе', surname='Плюшевая'))
 # # print(find_phone(name='Санта Моника Плюшевая', surname='Моника'))
 
+# Идеи для решения задачи ниже:
+# name_member = i.split()
+# name_member.extend(i)
+# print(type(i))
 
+### Телефонная книга
 phonebook = {'Хосе Педро Игнасио': 898765, 'Санта Моника Плюшевая': 7655775}
 
-# def find_phone(name, surname):
-name_member = []
-for i in phonebook:
-    list_split = i.split()
-    # name_member.append(list_split)
-    print(list_split)
-        # return(name_member)
+def find_phone(name, surname):
+    name_member = []
+    # разбил вводимые данные по словам, создал список
+    for i in phonebook.keys():
+        name_member.extend(i.split())
     
-# print(find_phone(name='Хосе', surname='Санта'))
+    
+    return f'''
+    name_member: {name_member}
+    name_member_type: {type(name_member)}
+    phonebook: {phonebook}
+    phonebook_type: {type(phonebook)}
+    '''
+
+    # if name_member in phonebook:
+    #     return('Куку')
+    
+print(find_phone(name='Хосе', surname='Санта'))
