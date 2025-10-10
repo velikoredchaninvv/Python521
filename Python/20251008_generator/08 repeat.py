@@ -1,7 +1,4 @@
 def read_file(filename):
-    with open(filename, 'r') as file:
+    with open(filename) as file:
         for line in file:
-            yield line.strip()
-
-for line in read_file('example_text.txt'):
-    print(line)
+            yield file.split()

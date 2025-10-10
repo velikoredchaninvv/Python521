@@ -8,4 +8,3 @@ def read_file(filename):
 
 for line in read_file("example.txt"):
     print(line) # построчный вывод содержимого файла
-
