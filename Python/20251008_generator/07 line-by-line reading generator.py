@@ -2,8 +2,8 @@
 # Генератор экномит память, загружая строки файла только по мере необходимости:
 
 def read_file(filename):
-    with open(filename, "r") as file:
-        for line in file:
+    with open(filename, "r") as f:
+        for line in f:
             yield line.strip() # вместо return возвращает yield для generator
 
 for line in read_file("example.txt"):
