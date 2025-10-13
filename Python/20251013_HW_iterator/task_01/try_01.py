@@ -13,4 +13,3 @@ def write_text():
 write_text=write_text()
 
 # Интерпретатор перебора строк
-
