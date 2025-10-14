@@ -9,8 +9,10 @@ while True:
         # pass
     
     elif cmd == 'add':
-        data = 
-    
+        data = input('Введите текст заметки: ')
+        with open('notes.txt', 'a', encoding='utf-8') as f:
+            f.write(data + '\n')
+
     elif cmd == 'view':
         # показываем заметки
         pass
