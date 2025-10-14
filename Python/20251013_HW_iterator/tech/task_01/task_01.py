@@ -26,5 +26,3 @@ while True:
     except StopIteration:
         print('Все заказы обработаны')
         break
-
-    
