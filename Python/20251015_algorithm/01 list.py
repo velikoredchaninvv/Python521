@@ -6,18 +6,37 @@
 # [] Написать функцию, которая возвращает номер позиции, если число найдено и None, если не найдено
 
 # while
+# if
 # +=
 # -=
 # [] - обращение по номеру позиции в списке
 
-input = int(input("Введите число: "))
-list = [7, 2, 4, 8, 3, 1, 5]
+#          0 1 2 3 4 5 6 7 8     номера квартиры
+numlist = [3,5,6,1,6,7,8,2,6]  # жители
 
-i=1
-while True:
-    i <= len(list)
-    i+=1
-    list[i] != input
-    print(list[i-2])
+n1 = 3
+n2 = 6
+n3 = 4
+n4 = 1
 
-# print(len(list))
+def in_my_list(lst, num):
+    '''
+    Функция получает на вход список и число.
+    Возвращает True, если число есть в списке.
+    B False, если числа в списке нет.
+    '''
+
+    i = 0
+    list_position = []
+    
+    while i < len(lst):
+        while lst[i] == num:
+            # continue
+            list_position.append(i)
+            i += 1
+            return list_position
+
+    return False
+
+search = in_my_list(numlist, n2)
+print(f'Список: {numlist}, Число {n2}, Позиция: {search}')
