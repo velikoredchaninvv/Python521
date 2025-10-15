@@ -21,7 +21,7 @@ while True:
                 existing = []
 
             # проверяем совпадение с последней заметкой
-            if existing.strip() and existing[-1].strip() == data:
+            if existing and existing[-1].strip() == data:
                 print('Такая заметка уже есть.')
             else:
                 with open('notes.txt', 'a', encoding='utf-8') as f:
