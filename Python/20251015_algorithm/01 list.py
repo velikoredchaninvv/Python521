@@ -27,14 +27,14 @@ def in_my_list(lst, num):
     '''
 
     i = 0
-    list_position = []
-    
+    position_list = []
+
     while i < len(lst):
         while lst[i] == num:
             # continue
-            list_position.append(i)
+            position_list.append(i)
             i += 1
-            return list_position
+            return position_list
 
     return False
 
