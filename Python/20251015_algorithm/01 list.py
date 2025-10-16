@@ -30,13 +30,12 @@ def in_my_list(lst, num):
     position_list = []
 
     while i < len(lst):
-        while lst[i] == num:
-            # continue
+        if lst[i] == num:
             position_list.append(i)
-            i += 1
-            return position_list
+        i += 1
 
-    return False
+    if position_list:
+        return position_list
 
 search = in_my_list(numlist, n2)
 print(f'Список: {numlist}, Число {n2}, Позиция: {search}')
