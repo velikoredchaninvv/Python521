@@ -23,7 +23,7 @@ from dataclasses import dataclass
 @dataclass
 class Task:
     id: int
-    decription: str
+    description: str
     priority: str # high or #normal
 
 class TaskManager:
