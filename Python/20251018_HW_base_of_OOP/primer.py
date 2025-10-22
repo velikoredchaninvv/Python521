@@ -23,8 +23,7 @@ def __str__(self):
 
     return header + separator + "".join(rows)
 
-
-# Пример использования
+            # Пример использования
 student = Student("Alice", "Math", "A")
 student.process_data()
 print(student)
