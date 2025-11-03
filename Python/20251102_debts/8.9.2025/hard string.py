@@ -117,13 +117,40 @@
 #     print((el1+el2)*3+el1)
 
 
-el1 = ' .o. '
-el2 = ' o.o '
-stroke = 10+1
-column = 5
+# el1 = ' .o. '
+# el2 = ' o.o '
+# stroke = 10+1
+# column = 5
 
-for i in range(1,stroke):
-    if i%2==1:
-        print(el1*column)
-    else:
-        print(el2*column)
+# for i in range(1,stroke):
+#     if i%2==1:
+#         print(el1*column)
+#     else:
+#         print(el2*column)
+
+# а теперь как было нужно
+
+# stroke = 'ш'*10
+# print((stroke + '\n')*10)
+
+# for i in range(10):
+#     print('ш'*10)
+
+# size = 10
+# for x in range(10):
+#     if x%2==0:
+#         print('.o' * (size//2))
+#     else:
+#         print('o.' * (size//2))
+
+# size = 10
+# grid_size = 5
+
+# for i in range(size*grid_size):
+#     string = '' # Начало каждой строки
+#     for j in range(size*grid_size):
+#         if ((i//grid_size) + (j//grid_size)) %2==0:
+#             string += 'o'
+#         else:
+#             string += '.'
+#     print(string)
