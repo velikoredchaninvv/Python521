@@ -4,20 +4,15 @@
 # [+] Нарисовать только границу поля и пустую серединку.
 # [] Вывести на экран таблицу из 4 строк: три товара и сумма без использования цикла
 
-# вопрос о размере
-mes = input('Введите размер поля в формате 1x1: ')
-mes = mes.split('x')
-# # print(mes)
+# el1 = '|'
 
-i=0
-j=0
-horizont = ''
-while i < 2:
-    print('o'*int(mes[1]))
-    while j < (int(mes[1])-2):
-        horizont='o' + (' '*(int(mes[0])-1)) + 'o'
-        print(horizont)
-        j+=1
-    # print('o' * int(mes[0]))
-    i+=1
-# print(horizont)
+# items = {
+#     'item1' : ('Пельмени', 600),
+#     'item2' : ('Суши', 3000),
+#     'item3' : ('Порш', 3200000)
+# }
+
+# item_list = list(items.values())
+# # item_list = list(items.keys())
+# print(item_list)
+
